@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            background: #ccc;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .demo-1 {
+            word-break: break-all;
+        }
+
+        .demo-2 {
+            background: #ccc;
+            width: 100px;
+            height: 100px;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>word-break 文本打断</h1>
+    <div class="demo">
+        class.imooc.com class.imooc.com
+    </div>
+    <div class="demo demo-1">
+        class.imooc.com class.imooc.com
+    </div>
+    <p>仅对段落中的半角空格和连字符进行换行.</p>
+    <div class="demo-2">
+        class imooc-com class imooc-com classimooccom
+    </div>
+</body>
+
+</html>

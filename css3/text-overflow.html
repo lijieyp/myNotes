@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            height: 30px;
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: clip;
+            border: 1px solid red;
+        }
+
+        .demo2 {
+            height: 30px;
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border: 1px solid red;
+        }
+
+        .demo3 {
+            height: 30px;
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: "!";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text-overflow 文字超出</h1>
+    <p>text-overflow 用于设置当文字内容超过所在元素设定的范围时候的展示效果。</p>
+    <p>文字超出后裁切内容</p>
+    <div class="demo">
+        文字超出后裁切内容
+    </div>
+    <p>文字超出元素后使用省略号.</p>
+    <div class="demo2">
+        文字超出元素后使用省略号
+    </div>
+    <p>文字超出元素后使用!,只在火狐浏览器兼容</p>
+    <div class="demo3">
+        文字超出元素后使用!号
+    </div>
+    <p>小结</p>
+    <ol>
+        <li>text-overflow一定要和overflow:hidden;,white-space:nowrap;一起使用,不能单独用.</li>
+        <li>这个属性通常是在有设置宽度和高度的元素使用.</li>
+    </ol>
+</body>
+
+</html>

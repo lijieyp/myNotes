@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dv {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 20px;
+        }
+
+        #dv2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 0 8px 0 8px;
+        }
+
+        .card {
+            background: red;
+            width: 100px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .text {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
+        .table {
+            background: red;
+            border-radius: 8px 8px 0 0;
+            font-size: 18px;
+            color: #fff;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+        #dv3 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>基本用法:</p>
+    <div id="dv"></div>
+    <p>给demo增加右上和左下的圆角</p>
+    <div id="dv2"></div>
+    <p>制作一个带有圆角的卡片</p>
+    <div class="card">
+        <div class="text">demo1</div>
+    </div>
+    <p>给一个table增加圆角左上和右上是8px右下和左下是直角</p>
+    <table class="table">
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+        </tr>
+        <tr>
+            <td>demo</td>
+            <td>19</td>
+        </tr>
+    </table>
+    <p>让一个宽度和高度相等的块级元素变成一个圆.如果圆角过大,记得要设定padding,这样可以避免里面的内容超出元素.</p>
+    <div id="dv3"></div>
+    <p>
+        <ol>
+            <li>不要让border-radius的%的值大于50,因为如果两个相邻的半径和超过了对应盒子的边的长度,那么浏览器要重新计算以保证它们不重合.虽然表面上看没有问题但是这样会对性能有影响.</li>
+            <li>如果用rem、em单位在移动端用border-radius画圆,在部分机型里面是椭圆的问题,可以通过50%来解决,或者使用px配合缩放scale来实现rem单位的效果.</li>
+            <li>在内联元素span这类标签使用这个属性的时候同样有效但是记得不要使用%这样会导致一些span标签的圆角不一样因为%是参考长和宽计算的.</li>
+            <li>border-radius圆角并不会隐藏标签内部元素的内容,如果有内容溢出的情况记得增加overflow:hidden</li>
+            <li>任何元素都可以使用这个属性,包括视频、音频标签等等。</li>
+            <li>一般情况下不推荐border-top-left-radius这类的写法除非是需要在某种交互过程中需要改变其中的一个圆角值和其他的保持不变.因为这类的标签会影响浏览器渲染的性能.</li>
+        </ol>
+    </p>
+</body>
+
+</html>

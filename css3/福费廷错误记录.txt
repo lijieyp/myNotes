@@ -1,0 +1,61 @@
+lcfs.104.001.01.xml
+
+--FincgInfo 融资信息
+----FoftDealAmt 福费廷成交金额
+加签要素文档没有
+
+
+
+lcfs.201.001.01.xml
+PrcDt  ProcessDate 处理日期没写
+
+
+lcfs.212.001.01.xml
+SttlmTp SettlementType 结息方式   拼写错误
+SttlmTpDesc SettlementTypeDescription  结息方式描述  拼写错误
+
+
+lcfs.212.001.01.xml
+PrcDt  ProcessDate 处理日期没写
+
+
+lcfs.213.001.01.xml
+OfferConfInfo OfferConformationInformation  拼写错误
+
+
+lcfs.214.001.01.xml
+ClmTrfInfo  ClaimTransferInfo   拼写错误
+AsstPstNb  AssetPostNumber   完全对不上
+AsstRegNb  AssetRegistrationNumber  完全对不上
+FoftDealAmt ForfaitingDealAmount  完全对不上
+PmtDdlOfAsst  PaymentDeadlineOfAsset  完全对不上
+PrcDt ProcessDate  处理日期没写
+
+
+lcfs.223.001.01.xml
+PrcDt ProcessDate  处理日期没写
+
+
+lcfs.231.001.01.xml
+没有搜到,只搜到elcs.231.001.01
+
+lcfs.313.001.01.xml
+313顶部配成了101
+PrcDt ProcessDate  处理日期没写
+层级好像对不上
+
+
+lcfs.331.001.01.xml
+差了特别多
+
+lcfs.351.001.01.xml
+PrcDt ProcessDate  处理日期没写
+
+
+lcfs.352.001.01.xml
+PrcDt ProcessDate  处理日期没写
+
+
+lcfs.722.001.01.xml
+OrgnlFoFtMsgDwnld OriginalForfaitingMessageDownload 拼写错误
+PrcDt ProcessDate  处理日期没写

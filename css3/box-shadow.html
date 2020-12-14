@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 1px 1px 5px #ccc;
+        }
+
+        .demo2 {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 1px 1px 5px #ccc, 2px 2px 5px rgba(255, 25, 25, .5), 3px 3px 1px rgba(5, 206, 89, 0.5);
+        }
+
+        .demo3 {
+            width: 100px;
+            height: 100px;
+            transition: box-shadow 1s;
+        }
+
+        .demo3:hover {
+            box-shadow: 1px 1px 5px #ccc;
+            cursor: pointer;
+        }
+
+        .demo4 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            box-shadow: 100px 100px 4px #dedede, 30px 40px 4px #dedede, 70px 20px 4px #dedede, 80px 60px 4px #dedede;
+        }
+
+        .demo5{
+            width: 100px;
+            height: 100px; 
+            text-align: center;
+            line-height: 100px;;           
+            box-shadow:  15px 0 15px -15px green, -15px 0 15px -15px red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>基本用法:</p>
+    <div class="demo">demo</div>
+    <p>给demo添加多个阴影</p>
+    <div class="demo2">demo2</div>
+    <p>hover悬浮效果</p>
+    <div class="demo3">demo3</div>
+    <div style="overflow: hidden;">
+        <p>css3下雨效果</p>
+        <div class="demo4"></div>
+    </div>
+    <p>使用的窍门</p>
+    <div class="demo5"></div>
+
+    <p>小结</p>
+    <ol>
+        <li>如果给一个元素添加多个阴影,那么后面的颜色层级高于前面的,也就是说如果前3个参数一样,后面的颜色会覆盖前面的颜色.</li>
+        <li>不要给不规则的图形添加阴影,因为这只会添加到块级元素中,不会验证图片的路径添加阴影,可以使用滤镜来达到这样的效果.</li>
+    </ol>
+</body>
+
+</html>

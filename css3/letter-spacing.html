@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            letter-spacing: 5px;
+        }
+
+        .demo2 {
+            letter-spacing: -2px;
+        }
+
+        .demo3 {
+            letter-spacing: -5px;
+        }
+
+        .demo3>span {
+            display: inline-block;
+            width: 50px;
+            background: red;
+            letter-spacing: normal
+        }
+    </style>
+</head>
+
+<body>
+    <h1>letter-spacing 字间距</h1>
+    <p>当我们需要扩大或者减少字符之间的距离时候，会用到这个属性。这里要注意它只能作用英文，对于中文是无效的，所以在中文设置中一般很少用到它。</p>
+    <p>示例:</p>
+    <div class="demo">
+        demo1
+    </div>
+    <p>设置字符之间距离为-2px</p>
+    <div class="demo2">
+        demo2
+    </div>
+    <p>通过使用 letter-spacing 清除我们编辑 html 代码时候元素设定 inline-block 之后出现的空格。</p>
+    <div class="demo3">
+        <span>慕课网</span>
+        <span>学习</span>
+    </div>
+</body>
+
+</html>

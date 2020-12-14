@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 16px;
+        }
+        .box{
+            padding:1em;
+            border-radius: 1em;
+            background-color: lightgrey;
+        }
+        .box-small{
+            font-size:12px;
+        }
+        .box-large{
+            font-size:18px;
+        }
+        .slogan{
+            font-size:1.2em;
+            padding:1.2em;
+            background-color:#ccc;
+        }
+    </style>
+</head>
+<body>
+    <span class="box box-small">Small</span>
+    <span class="box box-large">Large</span>
+
+    We love coffee
+    <p class="slogan">We love coffee</p>
+    <script>
+        let d = document.querySelector('.box');
+        console.log(d);
+        let styles = getComputedStyle(d);
+        console.log(styles);
+    </script>
+</body>
+</html>

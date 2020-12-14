@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        Function.prototype.bind = Function.prototype.bind || function (context) {
+            var me = this;
+            var args = Array.prototype.slice.call(arguments, 1);
+            return function bound(){
+                var innerArgs = Array.prototype.slice.call(arguments);
+                var finalArgs = args.concat(innerArgs);
+                return me.applay(context,finalArgs);
+            }
+        }
+
+        var name = '小王',age = 17;
+        var obj = {
+            name:'小张',
+            objAge:this.age,
+            myFun:function(a,b,c,d){
+                console.log(this.name + "年龄" + this.age);
+                console.log(a);
+                console.log(b);
+                console.log(c);
+                console.log(d);
+            }
+        }
+        var db = {
+            name:'的吗',
+            age:99
+        }
+        obj.myFun.bind(db,1,2)(3,4);
+        // obj.myFun()
+    </script>
+</body>
+
+</html>

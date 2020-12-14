@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let arr = ['foo','bar'];
+        // let iter = arr[Symbol.iterator]();
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+
+        class Counter {
+            constructor(limit) {
+                this.count = 1;
+                this.limit = limit;
+            }
+
+            next() {
+                if (this.count <= this.limit) {
+                    return {
+                        done: false,
+                        value: this.count++
+                    };
+                } else {
+                    return {
+                        done: true,
+                        value: undefined
+                    }
+                }
+            }
+
+            [Symbol.iterator]() {
+                return this;
+            }
+        };
+
+        let counter = new Counter(3);
+
+        console.log(counter.next());
+        console.log(counter.next());
+        console.log(counter.next());
+        
+        // for (let i of counter) {
+        //     console.log(i);
+        // }
+    </script>
+</body>
+
+</html>

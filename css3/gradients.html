@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(red, green);
+        }
+
+        .demo2 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(red 70%, green);
+        }
+
+        .demo3 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right, red 70%, green);
+        }
+
+        .demo4 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(to right bottom, red, green);
+        }
+
+        .demo5 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(30deg, red, green);
+        }
+
+        .demo6 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(0deg, red, green);
+        }
+
+        .demo7 {
+            width: 200px;
+            height: 100px;
+            background: radial-gradient(red, green);
+        }
+
+        .demo8 {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(red, green);
+        }
+
+        .demo9 {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, red, green);
+        }
+
+        .demo10 {
+            width: 100px;
+            height: 100px;
+            background: repeating-radial-gradient(circle, red 5%, green 20%);
+        }
+
+        .demo11 {
+            width: 100px;
+            height: 100px;
+            background-image: radial-gradient(at top left, red, green);
+        }
+
+        .demo12 {
+            width: 100px;
+            height: 100px;
+            background-image: radial-gradient( at 10% 20%,red, green);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>线性渐变</h2>
+    <p>基本用法</p>
+    <div class="demo"></div>
+    <p>让红色在元素70%的位置之后在开始向绿色渐变.</p>
+    <div class="demo2"></div>
+    <p>创建一个从左到右的渐变背景色</p>
+    <div class="demo3"></div>
+    <p>创建一个从左上到右下的渐变颜色</p>
+    <div class="demo4"></div>
+    <p>创建一个30度角的线性渐变</p>
+    <div class="demo5"></div>
+    <p>创建一个0度角的线性渐变</p>
+    <div class="demo6"></div>
+
+    <h2>径向渐变</h2>
+    <p>创建一个红色到绿色的径向渐变</p>
+    <div class="demo7"></div>
+    <p>创建一个椭圆红色到绿色的假圆形径向渐变</p>
+    <div class="demo8"></div>
+    <p>创建一个真正的圆形渐变</p>
+    <div class="demo9"></div>
+    <p>创建一个重复的径向渐变</p>
+    <div class="demo10"></div>
+    <p>改变渐变的中心点.</p>
+    <div class="demo11"></div>
+    <p>也可以是数量单位</p>
+    <div class="demo12"></div>
+
+    <p>小结:</p>
+    <ol>
+        <li>一定要加上at不然它的兼容性很不好</li>
+        <li>使用渐变背景色可以是background也可以是background-image但不要写成background-color</li>
+        <li>设置了渐变背景色就不能再用一个元素内再使用图片了,如果想叠加图片可以通过在内部新建一个标签来引入你想插入的图片,并通过定位来达到想要的效果.</li>
+        <li>尽量使用渐变而不是图片,这样可以减少网络请求,也减少项目体积.</li>
+    </ol>
+</body>
+
+</html>

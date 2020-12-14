@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s1 = Symbol('foo'),
+            s2 = Symbol('bar'),
+            s3 = Symbol('baz'),
+            s4 = Symbol('qux')
+
+        let o = {
+            a:1,
+            [s1]:'foo val'
+        }
+        console.log(o);
+
+        Object.defineProperty(o,s2,{value:'bar val'});
+        console.log(o);
+
+        Object.defineProperties(o,{
+            [s3]:{value: 'baz val'},
+            [s4]:{value: 'qux val'}
+        })
+        console.log(o);
+
+        // console.log(Object.getOwnPropertyNames(o));
+        console.log(Object.getOwnPropertyDescriptors(o));
+    </script>
+</body>
+</html>
